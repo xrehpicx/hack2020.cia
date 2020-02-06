@@ -18,7 +18,12 @@
     <script src="./js/events.js" defer></script>
 
 </head>
-
+<a id="mlh-trust-badge"
+    style="display:block;max-width:100px;min-width:60px;position:fixed;right:20px;top:0;width:10%;z-index:10000"
+    href="https://mlh.io/seasons/apac-2020/events?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=black"
+    target="_blank"><img
+        src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-apac-black.svg"
+        alt="Major League Hacking 2020 Hackathon Season" style="width:100%"></a>
 <body>
     <div class="intro-cover">
         <div class="intro-logo-img">
@@ -26,7 +31,7 @@
         </div>
         <h1 class="intro-cover-text">Communities in Atria</h1>
     </div>
-    <a href="https://my.mlh.io/oauth/authorize?client_id=c5f044c4c6b8f82817fa618616557a8bb860925b8d65cbad1ffd9e44cc5edaa3"
+    <a href="https://my.mlh.io/oauth/authorize?client_id=cdaf4cff90d57392013448818e1de9a71d71cc5fd210ad04bd0d34bff8e6fe5c&redirect_uri=http://iot.atria.edu&response_type=token"
         target="_blank">
         <div class="register-btn">
             <h3>REGISTER NOW</h3>
@@ -85,25 +90,37 @@
         </div>
     </div>
 
+
+
     <div class="schedule" id="schedule">
         <div class="schedule-title">
             <h1>The Schedule</h1>
         </div>
+        
         <div class="schedule-section">
-            <div class="scroll-shade"></div>
-            <h3><span>Saturday</span><span> March 14th</span></h3>
-            <div class="day1 day"></div>
+            <div class="day1-section day-section">
+                <h3 class="day1-date"><span>Saturday</span><span> March 14th</span></h3>
+                <div class="day1 day"></div>
+            </div>
 
-            <h3><span>Sunday</span><span> March 15th</span></h3>
-            <div class="day2 day"></div>
+            <div class="day2-section day-section">
+                <h3 class="day2-date"><span>Sunday</span><span> March 15th</span></h3>
+                <div class="day2 day"></div>
+            </div>
+
+        </div>
+        <div class="tabs">
+            <h2 id="day1-tab">Day one</h2>
+            <h2 id="day2-tab">Day two</h2>
         </div>
     </div>
+
+
 
     <div class="tracks" id="tracks">
         <div class="track-title">
             <h1>Tracks/Themes</h1>
         </div>
-        <div class="track-scroll-shade"></div>
         <div class="track-section">
 
 
@@ -190,7 +207,7 @@
 
     <div class="faq" id="faq">
         <div class="questions">
-            <h1>FREQUENTLY ASKED QUESTIONS</h1>
+            <h1 class="faq-title">FREQUENTLY ASKED QUESTIONS</h1>
             <div class="question">
                 <h3>I do not know anything technical. Can i take part?</h3>
                 <div class="answer">
@@ -286,7 +303,7 @@
         </nav>
 
         <div class="logo">
-            
+
             <div class="logo-img">
                 <img data-src="./img/logo.png" alt="">
             </div>
