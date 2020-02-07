@@ -154,7 +154,7 @@ img {
     justify-content: flex-end;
     align-items: center;
     position: absolute;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -183,6 +183,33 @@ img {
 .fade>span>a {
     text-decoration: none;
     pointer-events: none;
+    color: rgba(255, 255, 255, 0.534);
+}
+
+.fade>.nav-links {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-links>p a {
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    pointer-events: none;
+}
+
+.nav-links>p {
+    cursor: pointer;
+}
+
+.nav-links>p:hover a {
+    color: var(--accentColor);
+    text-decoration: underline;
 }
 
 .landing-shade,
@@ -244,8 +271,55 @@ img {
     height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
-    
+    position: relative;
     background: var(--darkerBg);
+
+}
+
+.arrow {
+    width: 40px;
+    pointer-events: all;
+}
+
+.arrow img {
+    filter: invert();
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.left-arrow>img {
+    transform: rotate(180deg);
+}
+
+.left-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 90vh;
+    z-index: 10;
+    pointer-events: none;
+
+}
+
+.right-btn {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 90vh;
+    z-index: 10;
+    pointer-events: none;
 
 }
 
@@ -257,9 +331,15 @@ img {
 
 .photos-old {
     margin-top: 20px;
-    overflow: hidden; 
+    overflow: auto;
     white-space: nowrap;
+    scroll-behavior: smooth;
+    overflow: -moz-hidden-unscrollable;
+    pointer-events: painted;
+}
 
+.photos-old::-webkit-scrollbar {
+    display: none;
 }
 
 .img {
@@ -310,8 +390,13 @@ img {
 
 .question h3,
 .question p {
+    color: rgba(255, 255, 255, 0.911);
     letter-spacing: 1px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.answer p {
+    color: rgba(255, 255, 255, 0.747);
 }
 
 /* SCHEDULE */
@@ -558,6 +643,8 @@ img {
     word-break: normal;
     white-space: normal;
     width: 400px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.774);
 }
 
 .track-content h1,
@@ -615,6 +702,30 @@ img {
 
 .mlh-logo>img {
     width: 100%;
+}
+
+/* CONDUCT SECTION */
+.conduct {
+    padding: 50px;
+    background: var(--darkerBg);
+}
+
+.conduct-title {
+    margin-bottom: 8px;
+}
+
+.conduct-title h1 {
+    color: var(--accentColor);
+}
+
+.conduct-text p {
+    line-height: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 10px;
+}
+
+.conduct a {
+    color: var(--accentColor);
 }
 
 footer {
@@ -694,6 +805,25 @@ footer {
 
 /* MOBILE */
 @media only screen and (max-width: 650px) {
+
+    .conduct {
+        padding: 30px;
+    }
+
+    .conduct-title h1,
+    .conduct-text p {
+        text-align: center;
+        line-height: 30px;
+
+    }
+
+    .conduct-text p{
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.863);
+    }
+     .fade>.nav-links {
+        display: none;
+    }
 
     .schedule {
         position: relative;
@@ -847,8 +977,5 @@ footer {
         padding-bottom: 20px;
     }
 
-    .tabs {
-        top: 75vh;
 
-    }
 }
