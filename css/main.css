@@ -1067,10 +1067,10 @@ footer {
     -ms-flex-align: center;
     -webkit-box-align: center;
     align-items: center;
-    background-color: #3770FF;
+    background-color: #64E8B0;
     border-radius: 3px;
     border: none;
-    color: #FFFFFF;
+    color: #000000;
     cursor: pointer;
     display: -ms-flexbox;
     display: -webkit-box;
