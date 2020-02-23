@@ -1056,6 +1056,17 @@ footer {
         line-height: 25px;
         font-size: 1.2rem;
     }
+
+    .register-btn svg {
+        display: block;
+    }
+
+    .landing-page-btn{
+        display: flex;
+        justify-content: center;
+        width: 250px;
+        border-radius: 6px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
