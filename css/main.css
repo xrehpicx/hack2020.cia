@@ -73,6 +73,14 @@ p::selection {
     text-align: center;
 }
 
+.landing-page-btn {
+    margin-top: 20px;
+    opacity: 1;
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 4px;
+}
 
 .landing {
     position: relative;
@@ -725,7 +733,7 @@ img {
 
 .sponsor>.logo {
     width: 250px;
-    
+
     padding: 20px;
     border-radius: 4px;
     overflow: hidden;
@@ -746,7 +754,7 @@ img {
 
 .tsponsor>.logo {
     width: 500px;
-    
+
     padding: 20px;
     border-radius: 4px;
     overflow: hidden;
