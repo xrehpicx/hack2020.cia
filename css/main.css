@@ -267,6 +267,7 @@ img {
 .about>h1 {
     color: var(--accentColor);
     margin-bottom: 5px;
+    
 }
 
 .about>p {
@@ -275,8 +276,8 @@ img {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 1px;
     font-weight: 400;
-    line-height: calc(1.2*1.2rem);
-    color: rgba(255, 255, 255, 0.7);
+    line-height: calc(1.6*1.2rem);
+    color: rgba(255, 255, 255, 0.856);
 }
 
 /* CIA 2019 */
@@ -657,7 +658,7 @@ img {
     white-space: normal;
     width: 400px;
     line-height: 25px;
-    color: rgba(255, 255, 255, 0.774);
+    color: rgba(255, 255, 255, 0.856);
 }
 
 .track-content h1,
@@ -954,6 +955,8 @@ footer {
         right: 0;
         width: 100%;
         border-radius: 0;
+        display: flex;
+        justify-content: center;
     }
 
     footer {
@@ -1076,8 +1079,9 @@ footer {
     }
 
     .about p {
-        line-height: 25px;
+        line-height: 1.8rem;
         font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.856);
     }
 
     .register-btn svg {
