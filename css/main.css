@@ -80,6 +80,7 @@ p::selection {
     top: 0;
     right: 0;
     padding: 4px;
+    z-index: 1;
 }
 
 .landing {
