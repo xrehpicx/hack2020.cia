@@ -80,7 +80,11 @@
                 } else sections[i].scrollIntoView();
             })
         } else {
-            element.firstChild.style.setProperty('pointer-events', 'all');
+            console.log(element.firstChild)
+            if(element){
+                element.style.setProperty('pointer-events', 'all');
+            }
+             
         }
 
     })
@@ -92,7 +96,7 @@
                     SmoothVerticalScrolling(sections[i], 1000, 'top');
                 } else {
                     if (i == 0) {
-                        
+
                         document.querySelector('footer').scrollIntoView();
                     } else {
                         sections[i].scrollIntoView();
