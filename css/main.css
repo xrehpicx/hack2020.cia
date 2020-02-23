@@ -1112,6 +1112,13 @@ footer {
     cursor: pointer;
 }
 
-#devfolio-apply-now:hover {
+#devfolio-apply-now:hover,
+#devfolio-apply-now2:hover {
     background-color: #2954BF !important;
+    color: white;
+}
+
+#devfolio-apply-now svg,
+#devfolio-apply-now2 svg {
+    filter: invert();
 }
