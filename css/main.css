@@ -1061,7 +1061,7 @@ footer {
         display: block;
     }
 
-    .landing-page-btn{
+    .landing-page-btn {
         display: flex;
         justify-content: center;
         width: 250px;
@@ -1083,7 +1083,8 @@ footer {
     font-size: 2rem;
 }
 
-#devfolio-apply-now {
+#devfolio-apply-now,
+#devfolio-apply-now2 {
     -ms-flex-align: center;
     -webkit-box-align: center;
     align-items: center;
@@ -1104,6 +1105,10 @@ footer {
 }
 
 #devfolio-apply-now:not([disabled]) {
+    cursor: pointer;
+}
+
+#devfolio-apply-now2:not([disabled]) {
     cursor: pointer;
 }
 
