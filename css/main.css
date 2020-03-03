@@ -65,7 +65,7 @@ p::selection {
 
 .register-btn button {
     height: 70px;
-    
+
 }
 
 .register-btn>h3 {
@@ -84,15 +84,16 @@ p::selection {
     position: relative;
     top: 0;
     right: 0;
-padding: 0;
+    padding: 0;
     z-index: 1;
     border-radius: 6px;
 }
 
-.landing-page-btn button{
+.landing-page-btn button {
     height: 50px;
 }
- .landing {
+
+.landing {
     position: relative;
     height: 100vh;
     width: 100%;
@@ -560,20 +561,15 @@ img {
 }
 
 .card-content {
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    height: auto;
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
 .card-content::after {
-    content: "";
-    position: absolute;
-    background: var(--accentColor);
-    top: 8px;
-    height: 60px;
-    width: 2px;
+    display: none;
 }
 
 .card-content p {
@@ -619,6 +615,7 @@ img {
     height: 20px;
     margin-bottom: 20px;
     padding: 30px;
+    text-align: center;
 }
 
 .track-section {
@@ -627,6 +624,8 @@ img {
     width: 100%;
     padding-left: 30px;
     display: flex;
+    justify-content: center;
+    align-items: stretch;
     flex-wrap: wrap;
     overflow-x: auto;
     padding-top: 15px;
@@ -641,12 +640,16 @@ img {
 .track-card {
     margin: 20px;
     width: auto;
-    height: 100%;
-    padding-right: 20px;
+    height: auto;
+    padding: 20px;
+    background: rgb(25, 25, 30);
+    border-radius: 6px;
     /* padding: 0px 20px 0px 20px; */
 }
 
 .track-content>h1 {
+
+    text-align: center;
     position: sticky;
     bottom: 10px;
 }
@@ -663,6 +666,7 @@ img {
 
 
 .track-content p {
+    text-align: center;
     word-break: normal;
     white-space: normal;
     width: 400px;
@@ -912,6 +916,15 @@ footer {
 
 /* MOBILE */
 @media only screen and (max-width: 650px) {
+    .card-content::after {
+        content: "";
+        position: absolute;
+        background: var(--accentColor);
+        top: 8px;
+        height: 60px;
+        width: 2px;
+        display: block;
+    }
 
     .conduct {
         padding: 30px;
@@ -1020,7 +1033,11 @@ footer {
     }
 
     .track-section :last-child {
-        padding-right: 20px;
+        /* padding-right: 20px; */
+    }
+
+    .track-section {
+        padding-left: 0;
     }
 
     .track-scroll-shade {
@@ -1046,6 +1063,12 @@ footer {
         margin-left: 20px;
         margin-top: 10px;
         text-transform: uppercase;
+    }
+
+    .track-card {
+        /* margin: 0; */
+        margin-right: 0;
+        margin-left: 0;
     }
 
     #cia-title {
@@ -1098,7 +1121,7 @@ footer {
     .about p {
         line-height: 1.8rem;
         font-size: 1.2rem;
-        color: rgba(255, 255, 255, 0.856);
+        color: rgba(255, 255, 255, 0.952);
     }
 
     .register-btn svg {
