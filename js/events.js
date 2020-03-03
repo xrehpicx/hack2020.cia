@@ -1,43 +1,49 @@
 (function () {
     const events = [
-        [{
-            title: 'Participants registration begin',
-            from: '9am',
-        },
-        {
-            title: 'Opening Ceremony',
-            from: '10:30am',
-        },
-        {
-            title: 'Keynote session',
-            from: '11am'
-        },
-        {
-            title: 'lunch served',
-            from: '12:30pm'
-        },
-        {
-            title: 'Workshop 1 & 2 parallely',
-            from: '1:30pm'
-        },
-        {
-            title: 'hacking strarts',
-            from: '2:30pm',
-        },
-        {
-            title: 'Workshop 3 & 4 parallely',
-            from: '6:30pm',
-        },
-        {
-            title: 'dinner served',
-            from: '7:30pm',
-        },
+        [
+            {
+                title: 'Participants registration begin',
+                from: '9am',
+                noto: true,
+            },
+            {
+                title: 'Opening Ceremony',
+                from: '10:30am',
+            },
+            {
+                title: 'Keynote session',
+                from: '11am'
+            },
+            {
+                title: 'lunch served',
+                from: '12:30pm'
+            },
+            {
+                title: 'Workshop 1 & 2 parallely',
+                from: '1:30pm'
+            },
+            {
+                title: 'hacking strarts',
+                from: '2:30pm',
+                noto: true,
+            },
+            {
+                title: 'Workshop 3 & 4 parallely',
+                from: '6:30pm',
+            },
+            {
+                title: 'dinner served',
+                from: '7:30pm',
+                d: '',
+                noto: true,
+            },
 
         ],
         [
             {
                 title: 'midnight snack served alongside campfire',
                 from: '1am',
+                noto: true,
             },
             {
                 title: 'Breakfast',
@@ -54,6 +60,7 @@
             {
                 title: 'submission ends',
                 from: '2pm',
+                noto: true,
             },
             {
                 title: 'Jugdes briefing starts and demo',
@@ -93,20 +100,36 @@
                 else to = day[i + 1].from;
 
 
-                if (event.d) d = event.d;
+                if (event.d !== undefined) {
+                    d = event.d;
+                    console.log('event is set to', event.d)
+                }
+                else {
+                    if (event.d === undefined) d = '';
+                    console.log('event is set to', event.d)
+                }
 
-                else d = ' ';
             } catch (error) {
-                console.log('its fine')
+                console.log(error)
             }
 
             let card = document.createElement('div');
             card.setAttribute('class', 'schedule-card');
-            card.innerHTML = `<div class="card-content">
+            if (!event.noto) {
+                card.innerHTML = `<div class="card-content">
                         <h3>${event.title}</h3>
                         <p class="timings">${from} to ${to}</p>
                         <p class="event-desc">${d}</p>
                     </div>`;
+            } else {
+                if (d === undefined) d = '';
+                card.innerHTML = `<div class="card-content">
+                        <h3>${event.title}</h3>
+                        <p class="timings">${from}</p>
+                        <p class="event-desc">${d}</p>
+                    </div>`;
+            }
+
             if (ii) {
                 day2.appendChild(card);
             } else {
