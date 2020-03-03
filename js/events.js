@@ -38,7 +38,7 @@ const events = [
         },
 
     ],
-    
+
     [
         {
             title: 'Midnight snack served alongside campfire',
@@ -81,6 +81,7 @@ const events = [
         {
             title: 'Vote of Thanks',
             from: '6:55pm',
+            noto: true,
         },
     ]
 ];
