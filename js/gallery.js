@@ -1,7 +1,9 @@
+
 (() => {
     const images = document.querySelectorAll('.img');
     var currentImage = 0;
     let [leftArrow, rightArrow] = document.querySelectorAll('.arrow');
+        
     const opt = {
         threshold: .6
     }
@@ -52,5 +54,14 @@
                 images[currentImage].scrollIntoView({ block: 'nearest' });
             }
         }
-    }, 5000)
+    }, 3000);
+    document.querySelectorAll('img').forEach(img => {
+        img.onload = () => {
+            img.style.opacity = 1;
+        }
+        setTimeout(() => {
+            img.style.opacity = 1;
+        }, 1000);
+        if (img.getAttribute('data-src')) img.src = img.getAttribute('data-src');
+    });
 })();
