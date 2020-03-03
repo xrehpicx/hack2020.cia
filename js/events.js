@@ -106,8 +106,8 @@
             card.setAttribute('class', 'schedule-card');
             card.innerHTML = `<div class="card-content">
                         <h3>${event.title}</h3>
-                        <p>${from} to ${to}</p>
-                        <p>${d}</p>
+                        <p class="timings">${from} to ${to}</p>
+                        <p class="event-desc">${d}</p>
                     </div>`;
             if (ii) {
                 day2.appendChild(card);
