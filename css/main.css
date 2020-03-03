@@ -471,14 +471,16 @@ img {
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     margin-top: 15px;
     margin-bottom: 15px;
 
     background: rgb(20, 20, 25);
-    border-radius: 15px;
-    padding-left: 15px;
-    padding-bottom: 15px;
+    border-radius: 6px;
+    /* padding-left: 15px;
+    padding-bottom: 15px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
 
 }
 
@@ -551,7 +553,8 @@ img {
 }
  */
 .schedule-card {
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: inline-block;
     width: auto;
     height: 100%;
@@ -561,11 +564,27 @@ img {
 }
 
 .card-content {
-    width: 400px;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: relative;
+
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.438);
+}
+
+
+.event-desc {
+    text-align: center;
+    color: rgba(240, 255, 255, 0.925);
+    height: fit-content;
 }
 
 .card-content::after {
@@ -576,10 +595,10 @@ img {
     word-break: normal;
     white-space: normal;
     width: 400px;
+    height: auto;
 }
 
-.card-content h3,
-.card-content p {
+.card-content h3{
     margin: 10px 0 10px 10px;
 }
 
@@ -598,7 +617,10 @@ img {
     font-size: 1.5rem;
     font-weight: 400;
 }
-
+.timings{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 /* TRACKS */
 .tracks {
     background-color: rgb(0, 0, 5);
@@ -920,10 +942,17 @@ footer {
         content: "";
         position: absolute;
         background: var(--accentColor);
-        top: 8px;
-        height: 60px;
+        /* top: 20px;
+        left: -2px; */
+        top: 0;
+        left: 0;
+        height: 100%;
         width: 2px;
         display: block;
+    }
+
+    .card-content h3 {
+        width: 100%;
     }
 
     .conduct {
@@ -967,6 +996,38 @@ footer {
 
     .day {
         padding-bottom: 15px;
+    }
+
+    .schedule-card {
+        margin-top: 20px;
+
+        display: inline-block;
+        width: auto;
+        height: 100%;
+
+        padding: 0px 20px 0px 20px;
+
+    }
+
+    .card-content {
+        width: 100%;
+        height: min-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        background: rgba(0, 0, 0, 0);
+        text-align: left;
+        padding-top: 10px;
+        padding-left: 10px;
+
+    }
+
+
+    .event-desc {
+        text-align: left;
+        color: rgba(240, 255, 255, 0.925);
     }
 
     .schedule-card {
