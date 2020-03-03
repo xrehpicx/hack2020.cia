@@ -38,6 +38,7 @@ const events = [
         },
 
     ],
+    
     [
         {
             title: 'Midnight snack served alongside campfire',

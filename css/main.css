@@ -53,7 +53,7 @@ p::selection {
     padding: 50px;
 }
 
-.gallery-btn a{
+.gallery-btn a {
     text-decoration: none;
     color: var(--bgColor);
     padding: 20px;
@@ -62,7 +62,8 @@ p::selection {
     font-weight: 600;
     border-radius: 4px;
 }
- .register-btn {
+
+.register-btn {
     position: fixed;
     bottom: 50px;
     /* padding: 12px; */
@@ -598,15 +599,18 @@ img {
     width: auto;
     height: auto;
     padding: 20px;
-    background: rgb(25, 25, 30);
+    /* background: rgb(25, 25, 30); */
+    background: rgba(0, 0, 0, 0.438);
     border-radius: 6px;
     /* padding: 0px 20px 0px 20px; */
+
+    
 }
 
 .track-content>h1 {
 
     text-align: center;
-    position: sticky;
+    /* position: sticky; */
     bottom: 10px;
 }
 
@@ -616,6 +620,7 @@ img {
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     position: relative;
 
 }
