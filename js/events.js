@@ -1,7 +1,7 @@
 const events = [
     [
         {
-            title: 'Participants registration begin',
+            title: 'Participants Registration begin',
             from: '9am',
             noto: true,
         },
@@ -10,28 +10,28 @@ const events = [
             from: '10:30am',
         },
         {
-            title: 'Keynote session',
+            title: 'Keynote Session',
             from: '11am'
         },
         {
-            title: 'lunch served',
+            title: 'Lunch Served',
             from: '12:30pm'
         },
         {
-            title: 'Workshop 1 & 2 parallely',
+            title: 'Workshop 1 & 2 Parallely',
             from: '1:30pm'
         },
         {
-            title: 'hacking strarts',
+            title: 'Hacking Starts',
             from: '2:30pm',
             noto: true,
         },
         {
-            title: 'Workshop 3 & 4 parallely',
+            title: 'Workshop 3 & 4 Parallely',
             from: '6:30pm',
         },
         {
-            title: 'dinner served',
+            title: 'Dinner Served',
             from: '7:30pm',
             d: '',
             noto: true,
@@ -40,7 +40,7 @@ const events = [
     ],
     [
         {
-            title: 'midnight snack served alongside campfire',
+            title: 'Midnight snack served alongside campfire',
             from: '1am',
             noto: true,
         },
@@ -57,7 +57,7 @@ const events = [
             from: '12:30pm',
         },
         {
-            title: 'submission ends',
+            title: 'Submission Ends',
             from: '2pm',
             noto: true,
         },
@@ -66,7 +66,7 @@ const events = [
             from: '2:30pm',
         },
         {
-            title: 'scoring and top ten',
+            title: 'Scoring and Top ten',
             from: '3:30pm',
         },
         {
@@ -78,7 +78,7 @@ const events = [
             from: '5:30pm',
         },
         {
-            title: 'Vote of thanks',
+            title: 'Vote of Thanks',
             from: '6:55pm',
         },
     ]
