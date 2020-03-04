@@ -604,7 +604,7 @@ img {
     border-radius: 6px;
     /* padding: 0px 20px 0px 20px; */
 
-    
+
 }
 
 .track-content>h1 {
@@ -1192,4 +1192,22 @@ footer {
 #devfolio-apply-now svg,
 #devfolio-apply-now2 svg {
     filter: invert();
+}
+
+
+/* fade in aminations */
+.fadein {
+    opacity: 0;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
