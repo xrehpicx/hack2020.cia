@@ -18,7 +18,7 @@ const events = [
             from: '12:30pm'
         },
         {
-            title: 'Workshop 1 & 2 Parallely',
+            title: 'Build Your First Skill for Amazon Alexa and<br>Build a Blockchain Taco Shop with Ark.io',
             from: '1:30pm'
         },
         {
@@ -27,7 +27,7 @@ const events = [
             noto: true,
         },
         {
-            title: 'Workshop 3 & 4 Parallely',
+            title: 'Build and Deploy a Full stack web app with AWS',
             from: '6:30pm',
         },
         {
