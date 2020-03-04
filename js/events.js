@@ -119,14 +119,14 @@ const events = [
             let card = document.createElement('div');
             card.setAttribute('class', 'schedule-card');
             if (!event.noto) {
-                card.innerHTML = `<div class="card-content">
+                card.innerHTML = `<div class="card-content fadein">
                         <h3>${event.title}</h3>
                         <p class="timings">${from} to ${to}</p>
                         <p class="event-desc">${d}</p>
                     </div>`;
             } else {
                 if (d === undefined) d = '';
-                card.innerHTML = `<div class="card-content">
+                card.innerHTML = `<div class="card-content fadein">
                         <h3>${event.title}</h3>
                         <p class="timings">${from}</p>
                         <p class="event-desc">${d}</p>
