@@ -534,6 +534,7 @@ img {
 
 .card-content h3 {
     margin: 10px 0 10px 10px;
+    line-height: 2.4rem;
 }
 
 .card-content :nth-child(2) {
