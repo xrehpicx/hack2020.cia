@@ -50,7 +50,8 @@ p::selection {
 }
 
 .gallery-btn {
-    padding: 50px;
+    margin-top: 30px;
+    padding: 10px;
 }
 
 .gallery-btn a {
