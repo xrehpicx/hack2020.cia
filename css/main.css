@@ -1213,3 +1213,33 @@ footer {
         transform: translateY(0px);
     }
 }
+
+
+.disclaimer {
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0;
+    background: var(--darkerBg);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.disclaimer>a {
+    z-index: 1000;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 24px;
+    border-radius: 4px;
+    background: rgb(255, 62, 62);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+}
