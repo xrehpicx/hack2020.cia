@@ -1218,7 +1218,7 @@ footer {
 .disclaimer {
     width: 100%;
     height: auto;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     background: var(--darkerBg);
     z-index: 10;
