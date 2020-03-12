@@ -28,7 +28,10 @@
 
         body {
             background: rgb(255, 62, 62);
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
         p {
@@ -38,6 +41,25 @@
             line-height: 1.6rem;
             margin-top: 10px;
         }
+
+        p,
+        h1 {
+            text-align: center;
+        }
+
+        @media only screen and (max-width:650px) {
+            body {
+                height: auto;
+            }
+main{
+    padding-top: 40px;
+    padding: 25px;
+}
+            p,
+            h1 {
+                text-align: left;
+            }
+        }
     </style>
     <main>
         <h1>
@@ -46,13 +68,15 @@
         <p>
             As COVID-19 becomes a matter of global concern, we’re taking some proactive measures to help minimise the
             chances of
-            spread of the coronavirus. In the wake of COVID-19, here's a quick update on some of the steps we've taken to maintain a
+            spread of the coronavirus. In the wake of COVID-19, here's a quick update on some of the steps we've taken
+            to maintain a
             safe and
             healthy<br>
             environment for all:<br>
             Our organizers are continually being trained in best practices of respiratory hygiene, proper method &
             frequency of
-            washing hands as well as identification of associated symptoms. We are providing every attendee with hand sanitizers and
+            washing hands as well as identification of associated symptoms. We are providing every attendee with hand
+            sanitizers and
             other hygiene products.
             Should a Organizer notice any associated symptoms, they’ve been asked to immediately reach out to us
             and consult
