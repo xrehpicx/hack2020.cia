@@ -1199,8 +1199,12 @@ footer {
 
 /* fade in aminations */
 .fadein {
-    opacity: 0;
+    opacity: 1;
     transition: opacity 800ms ease-out;
+}
+
+.fadein :hover {
+    opacity: 1;
 }
 
 @keyframes fadein {
@@ -1243,4 +1247,10 @@ footer {
     font-weight: 600;
     color: black;
     text-transform: uppercase;
+}
+
+.fade>.nav-links {
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
