@@ -56,7 +56,7 @@
             window.scrollBy(0, eAmt);
     }
 
-    var sections = [
+    const sections = [
         document.querySelector('.about'),
         document.querySelector('.cia19'),
         document.querySelector('.schedule'),
@@ -64,14 +64,17 @@
         document.querySelector('.faq'),
         document.querySelector('.landing'),
         document.querySelector('.conduct'),
-    ]
+        /* document.querySelector('.contact-section'), */
+    ];
+    
+    /* sections.forEach(e => e.id = e.className); */
     document.querySelector('.fade>span').addEventListener('click', () => {
         if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
             SmoothVerticalScrolling(sections[0], 1000, 'top');
         } else sections[0].scrollIntoView();
     });
 
-    let footerLinks = document.querySelectorAll('.links p');
+    let footerLinks = document.querySelectorAll('.links>p');
     footerLinks.forEach((element, i) => {
         if (i != 7) {
             element.addEventListener('click', () => {
@@ -81,14 +84,13 @@
             })
         } else {
             console.log(element.firstChild)
-            if(element){
+            if (element) {
                 element.style.setProperty('pointer-events', 'all');
             }
-             
         }
 
     })
-    let navLinks = document.querySelectorAll('.nav-links p');
+    let navLinks = document.querySelectorAll('footer .nav-links p');
     navLinks.forEach((element, i) => {
         if (i != 7) {
             element.addEventListener('click', () => {
@@ -109,7 +111,7 @@
         }
 
     })
-
+ 
     const tabs = document.querySelectorAll('.tabs>h2');
     switchTo(0);
     function switchTo(tabindex) {
@@ -129,8 +131,8 @@
         })
     });
 
-
-
 })();
 
 
+document.querySelector('.alert');
+document.querySelector('#dismiss-btn').addEventListener('click', () => document.querySelector('.alert').style.display='none');
